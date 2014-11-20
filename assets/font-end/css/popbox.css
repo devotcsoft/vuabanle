@@ -1,0 +1,140 @@
+.popbox {
+  /*margin:0px auto;*/
+  /*text-align:center;*/
+  /*position:relative;*/
+}
+
+  .collapse { position:relative; }
+
+  .open {
+    /*background:#DDD;*/
+    /*border:solid 1px #FFF;*/
+    /*border-radius:5px;*/
+    /*box-shadow: 0px 0px 5px #CCC;*/
+    /*background:-webkit-gradient(linear,left top,left bottom,from(#f4f4f4),to(#e8e8e8));*/
+    /*background:-moz-linear-gradient(top,#f4f4f4,#e8e8e8);*/
+    /*background:linear-gradient(top,#f4f4f4,#e8e8e8);*/
+    /*padding:8px;*/
+  }
+
+    .box {
+      display:block;
+      display:none;
+      background:#FFF;
+      border:solid 1px #BBBBBB;
+      border-radius:5px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px;
+      position:absolute;
+        z-index: 999;
+    }
+
+      .box a.close {
+       color:red;
+       font-size:12px;
+       font-family:arial;
+       text-decoration:underline;
+      }
+
+      .arrow {
+      	width: 0;
+      	height: 0;
+      	border-left: 8px solid transparent;
+      	border-right: 8px solid transparent;
+      	border-bottom: 8px solid #FFF;
+      	position:absolute;
+      	left:1px;
+      	top:-8px;
+      	z-index:1001;
+      }
+
+      .arrow-border {
+      	width: 0;
+      	height: 0;
+      	border-left: 8px solid transparent;
+      	border-right: 8px solid transparent;
+      	border-bottom: 8px solid #BBBBBB;
+      	position:absolute;
+      	top:-9px;
+      	z-index:1000;
+      }
+
+.register-button-top{
+    float: left;
+    padding-top: 3px;
+}
+
+.login-button-top{
+    float: left;
+    width: auto !important;
+    padding-top: 3px;
+}
+
+#subForm{
+    padding: 20px;
+    color: #505050;
+    font-family: arial, helvetica, sans serif;
+    font-size: 12px;
+}
+
+#subForm tr td input{
+    border: 1px #e5e5e5 solid;
+    height: 20px;
+    font-family: arial, helvetica, sans serif;
+    color: #505050;
+    font-weight: normal;
+}
+
+#subForm tr{
+    margin-bottom: 10px;
+}
+
+#subForm tr td{
+    height: 30px;
+}
+
+#subForm tr td.button-f{
+    height: 50px !important;
+}
+
+#subForm tr td.button-f input{
+    height: auto !important;
+}
+
+#subForm tr td input.login{
+    background-color: #f34b26;
+    padding: 7px 11px;
+    color: #fff;
+    font-weight: bold;
+    border: none !important;
+}
+
+#subForm tr td input.login:hover{
+    background-color: #24b3a0;
+}
+
+#subForm tr td input.text{
+    width: 125px;
+}
+
+#subForm tr td a.close{
+    background-color: #2B3944;
+    padding: 7px 21px;
+    color: #fff;
+    float: right;
+    text-decoration: none;
+}
+
+#subForm tr td a.close:hover{
+    background-color: #24b3a0;
+}
+
+.forgot-pass a{
+    font-family: arial, helvetica, sans serif;
+    font-weight: normal !important;
+    color: #24b3a0 !important;
+    padding-top: 10px;
+}
+
+.forgot-pass a:hover{
+    text-decoration: underline;
+}

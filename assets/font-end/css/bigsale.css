@@ -1,0 +1,190 @@
+/* Email Author : tranngoclam1909@gmail.com */
+
+#main-page-sale{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.main-sale{
+    width: 100%;
+}
+
+.banner-main-sale{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.list-product-sale{
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.list-product-sale .last{
+    margin-right: 0px;
+}
+
+.product-sale-item{
+    background-color: #fff;
+    border: 1px #e5e5e5 solid;
+    box-sizing: border-box;
+    width: 386px;
+    height: 265px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 10px;
+}
+
+.product-sale-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px;
+}
+
+.product-sale-item .img-thumb{
+    width: 185px;
+    height: 185px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.product-sale-item .img-thumb img{
+    max-width: 185px;
+    max-height: 185px;
+}
+
+.product-sale-item .mask{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 45px;
+    height: 45px;
+    background-color: #f34b26;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.product-sale-item .mask span{
+    color: #fff;
+    font-weight: bold;
+    font-family: arial, helvetica, sans serif;
+    font-size: 14px;
+    line-height: 45px;
+}
+
+.product-sale-item .title{
+    line-height: 15px;
+    min-height: 60px;
+}
+
+.product-sale-item .title a{
+    font-family: arial, helvetica, sans serif;
+    color: #777;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.product-sale-item .title a:hover{
+    color: #0054a6;
+}
+
+.product-sale-item .new-price{
+    font-size: 19px;
+}
+
+.product-sale-item .over-time{
+    position: absolute;
+    left: 70px;
+    bottom: 10px;
+    color: #252525;
+    font-family: arial, helvetica, sans serif;
+    height: 40px;
+    width: 255px;
+    padding: 2px;
+    background: url("images/clock.jpg") left 10px center no-repeat;
+    background-size: 30px 30px;
+    padding-left: 45px;
+    opacity: 0.7;
+}
+
+.product-sale-item:hover .over-time{
+    opacity: 1;
+}
+
+.product-sale-item input.buy-now{
+    background-color: #29c1ad;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 8px 15px;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+}
+
+.product-sale-item input.buy-now:hover{
+    background-color: #f34b26;
+}
+
+/* jQuery Countdown styles 2.0.0. */
+.is-countdown {
+    border: 1px solid #e5e5e5;
+    /*background-color: #eee;*/
+}
+.countdown-rtl {
+    direction: rtl;
+}
+.countdown-holding span {
+    color: #888;
+}
+.countdown-row {
+    clear: both;
+    width: 100%;
+    padding: 0px 2px;
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+}
+.countdown-show1 .countdown-section {
+    width: 98%;
+}
+.countdown-show2 .countdown-section {
+    width: 48%;
+}
+.countdown-show3 .countdown-section {
+    width: 32.5%;
+}
+.countdown-show4 .countdown-section {
+    width: 24.5%;
+}
+.countdown-show5 .countdown-section {
+    width: 19.5%;
+}
+.countdown-show6 .countdown-section {
+    width: 16.25%;
+}
+.countdown-show7 .countdown-section {
+    width: 14%;
+}
+.countdown-section {
+    display: block;
+    float: left;
+    font-size: 75%;
+    text-align: center;
+}
+.countdown-amount {
+    font-size: 200%;
+}
+.countdown-period {
+    display: block;
+}
+.countdown-descr {
+    display: block;
+    width: 100%;
+}

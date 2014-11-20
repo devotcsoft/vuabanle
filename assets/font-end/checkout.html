@@ -1,0 +1,754 @@
+<!doctype html>
+<html>
+<head>
+    <!-- This infomations is optimized with SEO -->
+    <link href="favo-icon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"><!-- Thay link ảnh biểu tượng website -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><!-- Mã nguồn Website (Giữ nguyên) -->
+    <meta charset="utf-8">
+
+    <title>Đặt hàng | Vua bán lẻ</title>
+
+    <meta name="description" content="Mô tả nội dung website (70-160 ký tự)"/>
+    <meta name="keywords" content="Từ khóa 1, từ khóa 2, từ khóa 3, khoảng 4 từ khóa không quá, độ dài khoảng 4 từ" />
+    <meta name="robots" content="noodp,index,follow" /><!-- Quy định cho robot (Giữ nguyên)-->
+    <meta name="author" content="Author Name, authoremail@domain.com" /><!-- Tác giả website -->
+    <meta http-equiv="content-language" content="vi_VN" /><!-- Ngôn ngữ cho website -->
+
+    <meta property="og:locale" content="vi_VN" /><!-- Địa phương -->
+    <meta property="og:type" content="article" /><!-- Phân loại website (Thường là article) -->
+    <meta property="og:url" content="http://ten-website.com/" /><!-- Địa chỉ chính của Website -->
+    <meta property="og:site_name" content="Tên website" /><!-- Tên Website-->
+    <meta property="og:image" content="http://ten-website.com/images/logo.jpg" /><!-- Đường dẫn ảnh logo công ty-->
+
+    <!-- **CSS - stylesheets** -->
+    <link rel="stylesheet" type="text/css" href="css/style-page.css">
+    <link rel="stylesheet" type="text/css" href="css/main-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/checkout.css">
+
+    <!-- **jQuery** -->
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/fix-top-page.js"></script>
+    <script type="text/javascript" src="js/tab-jquery.js"></script>
+
+    <script type="text/javascript">
+        $('.title-top').hover( function(){
+            var $show = $('#main-menu-content');
+            $mainmenu.css('display':'block');
+        });
+    </script>
+
+</head>
+
+<body>
+
+<header id="header">
+    <div id="header-inner">
+        <div id="logo">
+            <a href="#"><img id="logo-images" src="css/images/logo.png" alt="Vua bán lẻ" title="Vua bán lẻ"></a>
+        </div><!--End Logo-->
+
+        <div id="search-box">
+            <form id="search-form">
+                <div id="search-input">
+                    <div id="icon-search"></div>
+                    <input type="text" class="key-search" placeholder="Nhập từ khóa tìm kiếm..." value>
+                    <div id="group-search">
+                        <div class="title-group" id="title-group">Tất cả danh mục</div>
+                        <ul id="list-group">
+                            <li>Tất cả danh mục</li>
+                            <li>Đồ dùng gia đình</li>
+                            <li>Thể thao, Du lịch, Nghe nhìn</li>
+                            <li>Thời trang, Sắc đẹp</li>
+                            <li>Điện máy, Máy văn phòng</li>
+                            <li>Đồ dùng, Đồ chơi trẻ em</li>
+                        </ul>
+
+                        <script type="text/javascript">
+                            $(document).ready(function(){
+                                $("ul#list-group li").click(function(){
+                                    //shower = $(this).parent().next();
+                                    shower = $("#title-group");
+                                    //change
+                                    shower.empty().append($(this).text());
+                                });
+                            });
+                        </script>
+                    </div>
+                    <button type="submit" class="search-button">Tìm kiếm</button>
+                </div>
+            </form>
+        </div><!--End Search Box-->
+
+        <div id="login">
+            <span class="title-login"><a href="#">Đăng ký</a> | <a href="#">Đăng nhập</a></span><br>
+            <span class="meta-login">Tài khoản & Đơn hàng</span>
+        </div><!--End Login-->
+
+        <div id="shopping-cart">
+            <span class="title-login"><a href="#">Giỏ hàng</a></span>&emsp;<span class="number-cart">9</span><br>
+            <span class="meta-login">Sản phẩm</span>
+        </div><!--End Shopping Cart-->
+    </div><!--End Header Inner-->
+</header><!--End Header-->
+
+<section id="top">
+<div id="top-inner">
+<nav id="main-menu">
+<div id="title-menu">
+    Danh mục sản phẩm
+</div>
+<ul id="main-menu-content">
+<li class="menu-item menu-item-1">
+    <div class="menu-icon-category">
+        <a href="#"><img src="css/images/menu-icon-category-1.png"></a>
+    </div>
+    <strong>
+        <a href="#">Đồ dùng gia đình</a>
+    </strong>
+    <div class="guide">
+        <a href="#">Đồ nội trợ</a>,
+        <a href="#">Đồ điện</a>,
+        <a href="#">Đồ trang trí</a>
+    </div>
+    <div class="sub-cate">
+        <div class="level-1">
+            <ul>
+                <li><a href="#">Đồ dùng nhà bếp</a>
+                    <div class="level-2">
+                        <ul>
+                            <li><a href="#">Đồ dùng nhà bếp</a></li>
+                            <li><a href="#">Máy trồng rau mầm</a></li>
+                            <li><a href="#">Máy xay và ép trái cây</a></li>
+                            <li><a href="#">Máy đánh trứng</a></li>
+                            <li><a href="#">Máy làm sữa Đậu Nành</a></li>
+                            <li><a href="#">Máy đo thực phẩm an toàn</a></li>
+                            <li><a href="#">Cân thực phẩm</a></li>
+                            <li><a href="#">Máy làm và nướng Bánh Mì</a></li>
+                            <li><a href="#">Nắp và hộp bảo quản chân không</a></li>
+                            <li><a href="#">Xoong - Nồi - Chảo</a></li>
+                            <li><a href="#">Máy hủy rác</a></li>
+                            <li><a href="#">Nồi cơm điện</a></li>
+                            <li><a href="#">Nồi hấp đa năng</a></li>
+                            <li><a href="#">Máy làm kem gia đình</a></li>
+                            <li><a href="#">Máy làm sữa chua</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Đồ dùng gia dụng</a>
+                    <div class="level-2">
+                        <ul>
+                            <li><a href="#">Máy đánh trứng</a></li>
+                            <li><a href="#">Máy làm sữa Đậu Nành</a></li>
+                            <li><a href="#">Máy đo thực phẩm an toàn</a></li>
+                            <li><a href="#">Xoong - Nồi - Chảo</a></li>
+                            <li><a href="#">Máy hủy rác</a></li>
+                            <li><a href="#">Nồi cơm điện</a></li>
+                            <li><a href="#">Nồi hấp đa năng</a></li>
+                            <li><a href="#">Máy làm kem gia đình</a></li>
+                            <li><a href="#">Máy làm sữa chua</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Đèn pin siêu sáng</a></li>
+                <li><a href="#">Bể bơi phao</a></li>
+                <li><a href="#">TV, Video & Âm thanh</a></li>
+                <li><a href="#">Nội thất</a></li>
+            </ul>
+        </div>
+
+        <div class="hot-product">
+            <div class="hot-product-item">
+                <div class="image-product-item">
+                    <a href="#"><img src="images/product/1.jpg" alt="Tên sản phẩm"></a>
+                </div>
+                <a href="#" class="name-product-item"><span>Dụng cụ tập thể dục</span></a><br>
+                <span class="price-product-item">1.900.000 VNĐ</span>
+            </div><!--End Hot Product Item-->
+
+            <div class="hot-product-item">
+                <div class="image-product-item">
+                    <a href="#"><img src="images/product/2.jpg" alt="Tên sản phẩm"></a>
+                </div>
+                <a href="#" class="name-product-item"><span>Dụng cụ tập thể dục</span></a><br>
+                <span class="price-product-item">1.900.000 VNĐ</span>
+            </div><!--End Hot Product Item-->
+
+            <div class="hot-product-item">
+                <div class="image-product-item">
+                    <a href="#"><img src="images/product/3.jpg" alt="Tên sản phẩm"></a>
+                </div>
+                <a href="#" class="name-product-item"><span>Dụng cụ tập thể dục</span></a><br>
+                <span class="price-product-item">1.900.000 VNĐ</span>
+            </div><!--End Hot Product Item-->
+        </div><!--End Hot Product-->
+
+        <div class="img-thumb-menu-item">
+            <img src="images/menu-item/appliances.png" alt="Đại diện">
+        </div>
+    </div>
+</li>
+
+<li class="menu-item menu-item-2">
+    <div class="menu-icon-category">
+        <a href="#"><img src="css/images/menu-icon-category-2.png"></a>
+    </div>
+    <strong>
+        <a href="#">Thể thao, Du lịch, Nghe nhìn</a>
+    </strong>
+    <div class="guide">
+        <a href="#">Dụng cụ thể lực</a>,
+        <a href="#">Máy chạy bộ</a>
+    </div>
+    <div class="sub-cate">
+        <div class="level-1">
+            <ul>
+                <li><a href="#">Máy chạy bộ</a></li>
+                <li><a href="#">Dụng cụ thể lực</a></li>
+                <li><a href="#">Patin</a></li>
+                <li><a href="#">Dụng cụ tập cơ bụng</a></li>
+                <li><a href="#">Nghe nhìn</a></li>
+                <li><a href="#">Bóng bàn</a></li>
+                <li><a href="#">Du lịch</a></li>
+                <li><a href="#">Ván trượt - SKATEBOARD</a></li>
+                <li><a href="#">Xe đạp thể lực</a></li>
+                <li><a href="#">Máy massage rung toàn thân</a></li>
+                <li><a href="#">Giàn tập tạ</a></li>
+                <li><a href="#">Máy tăng chiều cao</a></li>
+            </ul>
+        </div>
+
+        <div class="hot-product">
+            <div class="hot-product-item">
+                <div class="image-product-item">
+                    <a href="#"><img src="images/product/4.jpg" alt="Tên sản phẩm"></a>
+                </div>
+                <a href="#" class="name-product-item"><span>Dụng cụ tập thể dục</span></a><br>
+                <span class="price-product-item">1.900.000 VNĐ</span>
+            </div><!--End Hot Product Item-->
+
+            <div class="hot-product-item">
+                <div class="image-product-item">
+                    <a href="#"><img src="images/product/1.jpg" alt="Tên sản phẩm"></a>
+                </div>
+                <a href="#" class="name-product-item"><span>Dụng cụ tập thể dục</span></a><br>
+                <span class="price-product-item">1.900.000 VNĐ</span>
+            </div><!--End Hot Product Item-->
+
+            <div class="hot-product-item">
+                <div class="image-product-item">
+                    <a href="#"><img src="images/product/2.jpg" alt="Tên sản phẩm"></a>
+                </div>
+                <a href="#" class="name-product-item"><span>Dụng cụ tập thể dục</span></a><br>
+                <span class="price-product-item">1.900.000 VNĐ</span>
+            </div><!--End Hot Product Item-->
+        </div><!--End Hot Product-->
+
+        <div class="img-thumb-menu-item">
+            <img src="images/menu-item/menu-sport.png" alt="Thể thao du lịch nghe nhìn">
+        </div>
+    </div>
+</li>
+
+<li class="menu-item menu-item-3">
+    <div class="menu-icon-category">
+        <a href="#"><img src="css/images/menu-icon-category-3.png"></a>
+    </div>
+    <strong>
+        <a href="#">Thời trang, Sắc đẹp</a>
+    </strong>
+    <div class="guide">
+        <a href="#">Thời trang</a>,
+        <a href="#">Sắc đẹp</a>,
+        <a href="#">Sức khỏe</a>
+    </div>
+    <div class="sub-cate">
+        <div class="level-1">
+            <ul>
+                <li><a href="#">Thiết bị y tế gia đình</a></li>
+                <li><a href="#">Thiết bị làm đẹp</a></li>
+                <li><a href="#">Thực phẩm chức năng</a></li>
+                <li><a href="#">Mỹ phẩm làm đẹp</a></li>
+                <li><a href="#">Sản phẩm hỗ trợ tình yêu</a></li>
+                <li><a href="#">Đồng hồ thời trang</a></li>
+            </ul>
+        </div>
+
+        <div class="hot-product">
+            <div class="hot-product-item">
+                <div class="image-product-item">
+                    <a href="#"><img src="images/product/3.jpg" alt="Tên sản phẩm"></a>
+                </div>
+                <a href="#" class="name-product-item"><span>Dụng cụ tập thể dục</span></a><br>
+                <span class="price-product-item">1.900.000 VNĐ</span>
+            </div><!--End Hot Product Item-->
+
+            <div class="hot-product-item">
+                <div class="image-product-item">
+                    <a href="#"><img src="images/product/1.jpg" alt="Tên sản phẩm"></a>
+                </div>
+                <a href="#" class="name-product-item"><span>Dụng cụ tập thể dục</span></a><br>
+                <span class="price-product-item">1.900.000 VNĐ</span>
+            </div><!--End Hot Product Item-->
+
+            <div class="hot-product-item">
+                <div class="image-product-item">
+                    <a href="#"><img src="images/product/2.jpg" alt="Tên sản phẩm"></a>
+                </div>
+                <a href="#" class="name-product-item"><span>Dụng cụ tập thể dục</span></a><br>
+                <span class="price-product-item">1.900.000 VNĐ</span>
+            </div><!--End Hot Product Item-->
+        </div><!--End Hot Product-->
+
+        <div class="img-thumb-menu-item">
+            <img src="images/menu-item/fashion.png" alt="Thời trang, Sắc đẹp">
+        </div>
+    </div>
+</li>
+
+<li class="menu-item menu-item-4">
+    <div class="menu-icon-category">
+        <a href="#"><img src="css/images/menu-icon-category-1.png"></a>
+    </div>
+    <strong>
+        <a href="#">Điện máy, Máy văn phòng</a>
+    </strong>
+    <div class="guide">
+        <a href="#">Máy in</a>,
+        <a href="#">Máy chiếu</a>,
+        <a href="#">Thiết bị mạng</a>
+    </div>
+    <div class="sub-cate">
+        <div class="level-1">
+            <ul>
+                <li><a href="#">Đồ dùng nhà bếp</a></li>
+                <li><a href="#">Đồ dùng gia dụng</a></li>
+                <li><a href="#">Đèn pin siêu sáng</a></li>
+                <li><a href="#">Bể bơi phao</a></li>
+                <li><a href="#">TV, Video & Âm thanh</a></li>
+                <li><a href="#">Nội thất</a></li>
+            </ul>
+        </div>
+
+        <div class="hot-product">
+            <div class="hot-product-item">
+                <div class="image-product-item">
+                    <a href="#"><img src="images/product/1.jpg" alt="Tên sản phẩm"></a>
+                </div>
+                <a href="#" class="name-product-item"><span>Dụng cụ tập thể dục</span></a><br>
+                <span class="price-product-item">1.900.000 VNĐ</span>
+            </div><!--End Hot Product Item-->
+
+            <div class="hot-product-item">
+                <div class="image-product-item">
+                    <a href="#"><img src="images/product/2.jpg" alt="Tên sản phẩm"></a>
+                </div>
+                <a href="#" class="name-product-item"><span>Dụng cụ tập thể dục</span></a><br>
+                <span class="price-product-item">1.900.000 VNĐ</span>
+            </div><!--End Hot Product Item-->
+
+            <div class="hot-product-item">
+                <div class="image-product-item">
+                    <a href="#"><img src="images/product/3.jpg" alt="Tên sản phẩm"></a>
+                </div>
+                <a href="#" class="name-product-item"><span>Dụng cụ tập thể dục</span></a><br>
+                <span class="price-product-item">1.900.000 VNĐ</span>
+            </div><!--End Hot Product Item-->
+        </div><!--End Hot Product-->
+
+        <div class="img-thumb-menu-item">
+            <img src="images/menu-item/device.png" alt="Điện máy, Máy văn phòng">
+        </div>
+    </div>
+</li>
+
+<li class="menu-item menu-item-5">
+    <div class="menu-icon-category">
+        <a href="#"><img src="css/images/menu-icon-category-2.png"></a>
+    </div>
+    <strong>
+        <a href="#">Đồ dùng, Đồ chơi trẻ em</a>
+    </strong>
+    <div class="guide">
+        <a href="#">Đồ chơi cao cấp</a>,
+        <a href="#">Đồ chơi trí tuệ</a>
+    </div>
+    <div class="sub-cate">
+        <div class="level-1">
+            <ul>
+                <li><a href="#">Xe mô hình mới</a></li>
+                <li><a href="#">Đồ chơi trí tuệ thông minh</a></li>
+                <li><a href="#">Máy bay điều khiển</a></li>
+                <li><a href="#">Đồ chơi cao cấp</a></li>
+                <li><a href="#">Địu & Đai trẻ em</a></li>
+                <li><a href="#">Xe tập đi</a></li>
+                <li><a href="#">Xe đẩy</a></li>
+                <li><a href="#">Bình sữa, núm ti và thiết bị tiệt trùng</a></li>
+                <li><a href="#">Xe điện trẻ em</a></li>
+                <li><a href="#">Đồ chơi hình khối</a></li>
+                <li><a href="#">Nôi cũi</a></li>
+                <li><a href="#">Thảm chơi cho bé</a></li>
+                <li><a href="#">Chăn, ga & gối sơ sinh</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+
+        <div class="hot-product">
+            <div class="hot-product-item">
+                <div class="image-product-item">
+                    <a href="#"><img src="images/product/2.jpg" alt="Tên sản phẩm"></a>
+                </div>
+                <a href="#" class="name-product-item"><span>Dụng cụ tập thể dục</span></a><br>
+                <span class="price-product-item">1.900.000 VNĐ</span>
+            </div><!--End Hot Product Item-->
+
+            <div class="hot-product-item">
+                <div class="image-product-item">
+                    <a href="#"><img src="images/product/1.jpg" alt="Tên sản phẩm"></a>
+                </div>
+                <a href="#" class="name-product-item"><span>Dụng cụ tập thể dục</span></a><br>
+                <span class="price-product-item">1.900.000 VNĐ</span>
+            </div><!--End Hot Product Item-->
+
+            <div class="hot-product-item">
+                <div class="image-product-item">
+                    <a href="#"><img src="images/product/3.jpg" alt="Tên sản phẩm"></a>
+                </div>
+                <a href="#" class="name-product-item"><span>Dụng cụ tập thể dục</span></a><br>
+                <span class="price-product-item">1.900.000 VNĐ</span>
+            </div><!--End Hot Product Item-->
+        </div><!--End Hot Product-->
+
+        <div class="img-thumb-menu-item">
+            <img src="images/menu-item/baby.png" alt="Đồ dùng, Đồ chơi trẻ em">
+        </div>
+    </div>
+</li>
+
+<div id="sale">
+    <a href="#"><img src="css/images/sale.jpg"></a>
+</div>
+</ul>
+</nav><!--End Main Menu-->
+
+<div id="policy">
+    <div class="cskh">
+        <div>
+            <a class="tooltip" href="#demo7_tip " onmouseover="tooltip.pop(this, '#demo7_tip')">
+                <div class="usp-sp-icon usp-sprite usp-sp-warp">
+                    <div class="usp-sprite warp-animation"></div>
+                    <div class="usp-sprite warp-static"></div>
+                </div>
+                <div class="usp-sp-desc">
+                    <div class="strong uspline">Đổi trả hàng trong 10 ngày</div>
+                    <div class="uspline-sub"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="cskh">
+        <div>
+            <a class="tooltip" href="#demo8_tip " onmouseover="tooltip.pop(this, '#demo8_tip')">
+                <div class="usp-sp-icon usp-sprite usp-sp-cash">
+                    <div class="usp-sprite cash-animation"></div>
+                    <div class="usp-sprite cash-static"></div>
+                </div>
+                <div class="usp-sp-desc">
+                    <div class="strong uspline">Thanh toán khi nhận hàng</div>
+                    <div class="uspline-sub"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="cskh">
+        <div>
+            <a class="tooltip" href="#demo9_tip " onmouseover="tooltip.pop(this, '#demo9_tip')">
+                <div class="usp-sp-icon usp-sp-ship usp-sprite">
+                    <div class="usp-sprite ship-animation"></div>
+                </div>
+                <div class="usp-sp-desc">
+                    <div class="strong uspline">Vận chuyển miễn phí</div>
+                    <div class="uspline-sub"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div><!--End Policy-->
+
+<div id="hotline">
+    <span>HOTLINE : <span class="orange">04.6329.7119</span></span>
+</div><!--End Hotline-->
+</div><!--End Top Inner-->
+</section><!--End Top-->
+
+<section id="main-page">
+
+    <article class="order">
+
+        <div class="login-register">
+            <ul class="tabs">
+                <li class="active" rel="tab1">Đăng nhập</li>
+                <li rel="tab2">Mua hàng không cần đăng ký</li>
+            </ul>
+
+            <div class="tab_container_main">
+
+                <div id="tab1" class="tab_content">
+                    <div class="login">
+                        <table>
+                            <tr>
+                                <td class="title">E-mail <span class="red">*</span></td>
+                                <td class="info"><input type="text"></td>
+                            </tr>
+                            <!--<tr>-->
+                                <!--<td></td>-->
+                                <!--<td><span class="red">Thông báo lỗi ở đây</span></td>-->
+                            <!--</tr>-->
+                            <tr>
+                                <td>Mật khẩu <span class="red">*</span></td>
+                                <td><input type="password"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="regist-more"><a href="#">Quên mật khẩu?</a><a href="#">Đăng ký</a></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input class="submit-button" type="submit" value="Đăng nhập"></td>
+                            </tr>
+                        </table>
+                    </div><!--End Login-->
+                </div><!-- #tab1 -->
+
+                <div id="tab2" class="tab_content">
+                    <div class="register">
+                        <table>
+                            <tr>
+                                <td  class="title">Họ và tên <span class="red">*</span></td>
+                                <td class="info"><input type="text"></td>
+                            </tr>
+                            <!--<tr>-->
+                                <!--<td></td>-->
+                                <!--<td><span class="red">Thông báo lỗi ở đây</span></td>-->
+                            <!--</tr>-->
+                            <tr>
+                                <td>Email <span class="red">*</span></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>Số điện thoại <span class="red">*</span></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>Tỉnh/Thành Phố <span class="red">*</span></td>
+                                <td>
+                                    <select>
+                                        <option selected>-- Chọn tỉnh --</option>
+                                        <option value="Hà Nội">Hà Nội</option>
+                                        <option value="Đà Nẵng">Đà Nẵng</option>
+                                        <option value="TP.Hồ Chí Minh">TP.Hồ Chí Minh</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Địa chỉ <span class="red">*</span></td>
+                                <td><input type="text"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Yêu cầu khác</span></td>
+                                <td><textarea placeholder="Điền thêm những yêu cầu về sản phẩm"></textarea></td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td><input  class="submit-button" type="submit" value="Xác nhận"></td>
+                            </tr>
+                        </table>
+                    </div><!--End Register-->
+                </div><!-- #tab2 -->
+
+            </div> <!-- .tab_container -->
+
+        </div><!--End Login Register-->
+
+        <div class="order-list">
+            <h5 class="title">Đơn hàng của bạn</h5>
+
+            <div class="order-list-inner">
+                <div class="number">
+                    Bạn có <span class="red">8</span> sản phẩm trong đơn hàng
+                </div>
+
+                <table>
+                    <tr>
+                        <td class="name">Sản phẩm</td>
+                        <td class="numb">Số lượng</td>
+                        <td class="price">Thành tiền</td>
+                    </tr>
+                    <tr>
+                        <td>Soft Decor 40CDV</td>
+                        <td class="center">1</td>
+                        <td class="right">1.200.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Bộ set nước hoa nữ JEANNE ARTHES SET AMORE MIO</td>
+                        <td class="center">2</td>
+                        <td class="right">340.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Samsung Galaxy Tab 3 Lite T110 – 8GB / Wifi (Trắng)</td>
+                        <td class="center">1</td>
+                        <td class="right">2.800.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Apple iPad mini - 16GB / Wifi (Đen)</td>
+                        <td class="center">1</td>
+                        <td class="right">4.500.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Google Nexus 7 - 32GB / Wifi + 3G (Đen)</td>
+                        <td class="center">1</td>
+                        <td class="right">5.100.000 VNĐ</td>
+                    </tr>
+                </table>
+
+                <div class="total">
+                    <table>
+                        <tr>
+                            <td class="title-1">Tổng cộng</td>
+                            <td class="number-1">12.900.000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td class="title-2">Tổng giá trị đơn hàng<br><span class="tip">( *Giá trên đã bao gồm VAT, chưa bao gồm phí đóng gói và vận chuyển)</span></td>
+                            <td class="number-2">12.900.000 VNĐ</td>
+                        </tr>
+                    </table>
+                </div>
+            </div><!--End Order List Inner-->
+
+        </div><!--End Order List-->
+
+        <div style="clear: both"></div>
+    </article><!--End Order-->
+
+    <div style="clear: both"></div>
+</section>
+
+<footer>
+    <div id="footer-module">
+        <div class="footer-mod-1">
+            <h4>Thông tin</h4>
+            <div class="footer-mod-1-content">
+                <ul>
+                    <li><a href="#">Dành cho nhóm mua</a></li>
+                    <li><a href="#">Dành cho nhà cung cấp</a></li>
+                    <li><a href="#">Về vuabanle.vn</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Tin khuyến mại</a></li>
+                    <li><a href="#">Cam kết thông tin</a></li>
+                    <li><a href="#">Khiếu nại</a></li>
+                </ul>
+            </div>
+        </div><!--End Footer Mod 1-->
+
+        <div class="footer-mod-1">
+            <h4>Hỗ trợ khách hàng</h4>
+            <div class="footer-mod-1-content">
+                <ul>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Phương thức thanh toán</a></li>
+                    <li><a href="#">Hướng dẫn mua hàng</a></li>
+                    <li><a href="#">Chính sách đổi trả hàng</a></li>
+                    <li><a href="#">Trung tâm bảo hành</a></li>
+                    <li><a href="#">Báo phí vận chuyển</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                </ul>
+            </div>
+        </div><!--End Footer Mod 1-->
+
+        <div class="footer-mod-2">
+            <h4>Chăm sóc khách hàng</h4>
+            <div class="footer-mod-2-content">
+                <div class="support-item">
+                    <img src="images/support/1.jpg" width="57" height="57" alt="Nhân viên hỗ trợ 1">
+                    <span class="support-name">Nguyễn Thu</span><br>
+                    <span class="support-phone">04 6269 1411</span>
+                </div><!--Support Item-->
+
+                <div class="support-item">
+                    <img src="images/support/2.jpg" width="57" height="57" alt="Nhân viên hỗ trợ 1">
+                    <span class="support-name">Hoàng Lan</span><br>
+                    <span class="support-phone">04 6269 1444</span>
+                </div><!--Support Item-->
+
+                <div class="support-item">
+                    <img src="images/support/3.jpg" width="57" height="57" alt="Nhân viên hỗ trợ 1">
+                    <span class="support-name">Hoàng Tạo</span><br>
+                    <span class="support-phone">0987 355 209</span>
+                </div><!--Support Item-->
+
+                <div class="support-item">
+                    <img src="images/support/4.jpg" width="57" height="57" alt="Nhân viên hỗ trợ 1">
+                    <span class="support-name">Hà Kiên</span><br>
+                    <span class="support-phone">0946 435 292</span>
+                </div><!--Support Item-->
+
+                <a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=4058" class="spres-regester" target="_blank"> <img src="http://vuabanle.vn/public/font-end/images/chungnhan.jpg" title="" alt=""></a>
+
+            </div>
+        </div><!--End Footer Mod 1-->
+
+        <div class="footer-mod-2">
+            <h4>Đăng ký nhận tin khuyến mãi</h4>
+            <div class="footer-mod-2-content">
+                <table>
+                    <tr>
+                        <td><input type="text" placeholder="Nhập Email của bạn để đăng ký" value class="email-text"></td>
+                        <td><input type="button" value="Đăng ký" class="register-button"></td>
+                    </tr>
+                </table>
+            </div>
+        </div><!--End Footer Mod 2-->
+
+        <div class="footer-mod-2">
+            <h4>Hỗ trợ thanh toán</h4>
+            <div class="footer-mod-2-content">
+                <img src="images/payment/card.jpg" alt="card">
+                <img src="images/payment/AGRIBANK.jpg" alt="AGRIBANK">
+                <img src="images/payment/BIDV.jpg" alt="BIDV">
+                <img src="images/payment/MARITIME.jpg" alt="MARITIME">
+                <img src="images/payment/TECHCOM.jpg" alt="TECHCOM">
+                <img src="images/payment/VIETCOMBANK.jpg" alt="VIETCOMBANK">
+                <img src="images/payment/Vietinbank.jpg" alt="Vietinbank">
+
+            </div>
+        </div><!--End Footer Mod 2-->
+
+        <div class="footer-mod-2">
+            <h4></h4>
+            <div class="footer-mod-2-content">
+                <div class="share-icon">
+                    <a href="https://twitter.com/Vuabanlevn" ta="" class="twitter" target="_blank"></a><span> Twitter</span>
+                    <a href="https://www.facebook.com/Vuabanle.vn?ref=hl" class="facebook" target="_blank"></a><span>Facebook </span>
+                    <a href="https://plus.google.com/107085357342806112435/posts" class="google" target="_blank"></a><span>Google</span>
+                </div>
+            </div>
+        </div><!--End Footer Mod 2-->
+
+    </div><!--End Footer Module-->
+
+    <div id="copy-right">
+        <span>
+            <b>ĐƯỢC VẬN HÀNH BỜI SMART VIỆT JSC</b><br>
+            Địa chỉ: Số 75 Trung Kính, Trung Hòa, Cầu Giấy, Hà Nội, Thành lập ngày 07 tháng 09 năm 2011, Mã số doanh nghiệp: 0105486972<br>
+            Điện thoại: (04) 6329 7119 | Fax: (04) 6329 7119 | Email: info@vuabanle.vn
+        </span>
+    </div><!--End Copy Right-->
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+/* Email Author : tranngoclam1909@gmail.com */
+
+#main-news{
+    width: 100%;
+    float: left;
+}
+
+#main-news .last{
+    margin-right: 0px;
+}
+
+.news-item{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px #e5e5e5 solid;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: justify;
+    overflow: hidden;
+    height: 385px;
+    background-color: #fafafa;
+}
+
+.news-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px;
+    background-color: #fff;
+}
+
+.news-item .title{
+    font-family: arial, helvetica, sans serif;
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+
+.news-item .title a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #f34b26;
+}
+
+.news-item .function{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.news-item .function .time{
+    display: block;
+    float: left;
+    background: url("images/date.png") left center no-repeat;
+    font-family: arial, helvetica, sans serif;
+    font-size: 12px;
+    padding-left: 20px;
+    color: #b0b0b0;
+}
+
+.news-item .function .view{
+    display: block;
+    float: right;
+    background: url("images/icon-count-view.png") left center no-repeat;
+    padding-left: 25px;
+    font-family: arial, helvetica, sans serif;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.news-item .img-thumb{
+    text-align: center;
+    float: left;
+    width: 100%;
+    height: 175px;
+    margin-top: 20px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: table-cell;
+    box-sizing: border-box;
+}
+
+.news-item .img-thumb img{
+    max-width: 100%;
+}
+
+.news-item .intro-text{
+    font-family: arial, helvetica, sans serif;
+    font-size: 12px;
+}
+
+/* Module News Right */
+#module-news-right{
+    width: 210px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+.news-category{
+    width: 210px;
+    float: left;
+    margin-bottom: 10px;
+    font-family: arial, helvetica, sans serif;
+}
+
+.news-category .title{
+    width: 210px;
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #29c1ad;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.news-category .title a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.news-category .content{
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+.news-category .content ul li{
+    list-style: none;
+    line-height: 24px;
+    width: 190px;
+    border-bottom: 1px #e5e5e5 dashed;
+    padding: 5px 0px;
+}
+
+.news-category .content ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #252525;
+    line-height: 20px;
+    width: 190px;
+    display: inline-block;
+}
+
+.news-category .content ul li a:hover{
+    text-decoration: underline;
+}
+
+.title-news{
+    width: 100%;
+    float: left;
+    font-family: arial, helvetica, sans serif;
+    color: #f34b26;
+    border-top: 3px #e5e5e5 solid;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.article-content{
+    width: 100%;
+    float: left;
+    padding-bottom: 20px;
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+/* Related News */
+.related-news{
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+}
+
+.related-news .title{
+    font-family: arial, helvetica, sans serif;
+    font-size: 16px;
+    color: #f34b26;
+    margin-bottom: 10px;
+}
+
+.related-news ul li{
+    list-style: none;
+    line-height: 30px;
+}
+
+.related-news ul li a{
+    font-family: arial, helvetica, sans serif;
+    text-decoration: none;
+    font-size: 14px;
+    color: #252525;
+    background: url("images/icon-list.jpg") left center no-repeat;
+    padding-left: 20px;
+}
+
+.related-news ul li a:hover{
+    color: #f34b26;
+    text-decoration: underline;
+}

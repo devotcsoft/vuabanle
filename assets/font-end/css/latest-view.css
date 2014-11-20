@@ -1,0 +1,179 @@
+/* Email Author : tranngoclam1909@gmail.com */
+
+.latest-view{
+    float: left;
+    width: 930px;
+    margin-top: 30px;
+    border: 1px #d1d1d1 dashed;
+    padding: 0px 15px;
+}
+
+.task-latest-view{
+    width: 898px;
+    float: left;
+    height: 40px;
+    border-bottom: 1px solid #d1d1d1;
+    margin-bottom: 15px;
+}
+
+.task-latest-view .title{
+    font-family: arial, helvetica, sans serif;
+    color: #505050;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 40px;
+    float: left;
+    height: 40px;
+}
+
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+/* display none until init */
+.owl-carousel{
+    display: none;
+    position: relative;
+    width: 100%;
+    -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+    display: none;
+    position: relative;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+    -webkit-transition: height 500ms ease-in-out;
+    -moz-transition: height 500ms ease-in-out;
+    -ms-transition: height 500ms ease-in-out;
+    -o-transition: height 500ms ease-in-out;
+    transition: height 500ms ease-in-out;
+}
+
+.owl-carousel .owl-item{
+    float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+    cursor: pointer;
+}
+.owl-controls {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    position: absolute;
+    top: 7px;
+    right: 0px;
+}
+
+/* mouse grab icon */
+.grabbing {
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+}
+
+.owl-prev{
+    background: url("images/icon-rowsld.png");
+    width: 26px;
+    height: 26px;
+    background-position: 0px 0px;
+    float: left;
+    margin-right: 6px;
+}
+
+.owl-next{
+    background: url("images/icon-rowsld.png");
+    width: 26px;
+    height: 26px;
+    background-position: 26px 0px;
+    float: left;
+}
+
+.latest-view .product-item{
+    width: 178px;
+}
+
+.latest-view .img-product-item{
+    width: 158px;
+    height: 158px;
+    overflow: hidden;
+}
+
+.latest-view .img-product-item img {
+    max-width: 158px;
+    max-height: 158px;
+}
+
+.latest-view .product-mask {
+    top: 17px;
+    left: 17px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 1px;
+    background-color: #f34b26;
+}
+
+.latest-view .product-mask span {
+    font-size: 12px;
+}
+
+.latest-view .product-item{
+    box-sizing: border-box;
+    text-align: center;
+    height: 280px;
+}
+
+.latest-view .product-item:hover {
+    border: 1px #e5e5e5 solid;
+}
+
+.latest-view  .button-buy{
+    top: 75px;
+    left: 40px;
+}
+
+.latest-view .product-item:hover img {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+}
+
+.latest-view .product-price {
+    width: 158px;
+}
+
+.latest-view .product-name {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.latest-view .new-price {
+    font-size: 14px;
+}

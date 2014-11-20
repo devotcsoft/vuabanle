@@ -1,0 +1,62 @@
+/*  COOKIE POPUP
+-------------------------------------------*/
+div.cookie-popup-wrap{
+    display: none;
+    width: 100%; height: 100%;
+    position: fixed;
+    /*background: rgba(0,0,0,0.6);*/
+    top: 0;left: 0;
+    z-index: 9999999;
+    text-align: center;
+}
+
+div.cookie-popup-wrap .mask{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+div.cookie-popup{
+    margin: 5% auto;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: inline-block;
+}
+
+div.cookie-popup h2{
+	border-bottom: 1px solid #DDDDDD;
+    font-size: 25px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+div.cookie-popup h6{
+    font-size: 12px;
+    margin-top: 20px;
+    /* padding-top: 5px; */
+    text-align: right;
+    text-align: center;
+}
+
+div.cookie-popup h6 a{
+    background: url("close-button.png") center no-repeat;
+    background-size: 50px 50px;
+    position: absolute;
+    top: -25px;
+    right: -60px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.4;
+}
+
+div.cookie-popup h6 a:hover{
+    opacity: 1;
+}

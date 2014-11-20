@@ -1,0 +1,320 @@
+/* Category 1 */
+.category-1{
+    border-bottom: 1px #79d8a1 solid;
+}
+
+.category-1 .name-category{
+    background-color: #6eca94;
+    position: relative;
+}
+
+.category-1 .name-category .mask{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 210px 205px;
+    border-color: transparent transparent #67bd8a transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.category-1 .list li{
+    background: url("images/list-color-1.jpg") left center no-repeat;
+}
+
+.category-1 .list li:hover a{
+    color: #67bd8a;
+}
+
+
+/* Category 2 */
+.category-2{
+    border-bottom: 1px #3ab7f7 solid;
+}
+
+.category-2 .name-category{
+    background-color: #3ab7f7;
+    position: relative; 
+}
+
+.category-2 .name-category .mask{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 210px 205px;
+    border-color: transparent transparent #2eabeb transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.category-2 .list li{
+    background: url("images/list-color-7.jpg") left center no-repeat;
+}
+
+.category-2 .list li:hover a{
+    color: #2eabeb;
+}
+
+
+/* Category 3 */
+.category-3{
+    border-bottom: 1px #79625c solid;
+}
+
+.category-3 .name-category{
+    background-color: #79625c;
+    position: relative;
+}
+
+.category-3 .name-category .mask{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 210px 205px;
+    border-color: transparent transparent #715b56 transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.category-3 .list li{
+    background: url("images/list-color-2.jpg") left center no-repeat;
+}
+
+.category-3 .list li:hover a{
+    color: #715b56;
+}
+
+
+/* Category 4 */
+.category-4{
+    border-bottom: 1px #fa5158 solid;
+}
+
+.category-4 .name-category{
+    background-color: #fa5158;
+    position: relative;
+}
+
+.category-4 .name-category .mask{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 210px 205px;
+    border-color: transparent transparent #e94c52 transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.category-4 .list li{
+    background: url("images/list-color-3.jpg") left center no-repeat;
+}
+
+.category-4 .list li:hover a{
+    color: #e94c52;
+}
+
+
+/* Category 5 */
+.category-5{
+    border-bottom: 1px #a46eb8 solid;
+}
+
+.category-5 .name-category{
+    background-color: #a46eb8;
+    position: relative;
+}
+
+.category-5 .name-category .mask{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 210px 205px;
+    border-color: transparent transparent #9967ac transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.category-5 .list li{
+    background: url("images/list-color-4.jpg") left center no-repeat;
+}
+
+.category-5 .list li:hover a{
+    color: #9967ac;
+}
+
+
+/* Category 6 */
+.category-6{
+    border-bottom: 1px #f34b26 solid;
+}
+
+.category-6 .name-category{
+    background-color: #f34b26;
+    position: relative;
+}
+
+.category-6 .name-category .mask{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 210px 205px;
+    border-color: transparent transparent #e34523 transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.category-6 .list li{
+    background: url("images/list-color-5.jpg") left center no-repeat;
+}
+
+.category-6 .list li:hover a{
+    color: #e34523;
+}
+
+
+/* Category 7 */
+.category-7{
+    border-bottom: 1px #87ab1d solid; /* Màu nhạt */
+}
+
+.category-7 .name-category{
+    background-color: #87ab1d; /* Màu nhạt */
+    position: relative;
+}
+
+.category-7 .name-category .mask{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 210px 205px;
+    border-color: transparent transparent #7ea01b transparent; /* Màu đậm */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.category-7 .list li{
+    background: url("images/list-color-6.jpg") left center no-repeat;
+}
+
+.category-7 .list li:hover a{
+    color: #7ea01b; /* Màu đậm */
+}
+
+
+/* Category 8 */
+.category-8{
+    border-bottom: 1px #db305a solid; /* Màu nhạt */
+}
+
+.category-8 .name-category{
+    background-color: #db305a; /* Màu nhạt */
+    position: relative;
+}
+
+.category-8 .name-category .mask{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 210px 205px;
+    border-color: transparent transparent #c52f54 transparent; /* Màu đậm */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.category-8 .list li{
+    background: url("images/list-color-8.jpg") left center no-repeat;
+}
+
+.category-8 .list li:hover a{
+    color: #c52f54; /* Màu đậm */
+}
+
+
+/* Category 9 */
+.category-9{
+    border-bottom: 1px #fc2830 solid; /* Màu nhạt */
+}
+
+.category-9 .name-category{
+    background-color: #fc2830; /* Màu nhạt */
+    position: relative;
+}
+
+.category-9 .name-category .mask{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 210px 205px;
+    border-color: transparent transparent #ed1c24 transparent; /* Màu đậm */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.category-9 .list li{
+    background: url("images/list-color-9.jpg") left center no-repeat;
+}
+
+.category-9 .list li:hover a{
+    color: #ed1c24; /* Màu đậm */
+}
+
+
+
+/* Category 10 */
+.category-10{
+    border-bottom: 1px #92278f solid; /* Màu nhạt */
+}
+
+.category-10 .name-category{
+    background-color: #92278f; /* Màu nhạt */
+    position: relative;
+}
+
+.category-10 .name-category .mask{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 210px 205px;
+    border-color: transparent transparent #6d309c transparent; /* Màu đậm */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.category-10 .list li{
+    background: url("images/list-color-10.jpg") left center no-repeat;
+}
+
+.category-10 .list li:hover a{
+    color: #6d309c; /* Màu đậm */
+}
+
+.img-thumb-category img{
+    width: 115px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.name-category:hover .img-thumb-category img{
+    width: 125px;
+}

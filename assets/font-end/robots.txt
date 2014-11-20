@@ -1,0 +1,9 @@
+# Author: Tran Ngoc Lam
+# Email-author: tranngoclam1909@gmail.com
+
+# Disallow: Not for the search engines looking for in this
+# directory
+
+User-agent: *
+Disallow: /administrator/
+Disallow: /manager/
