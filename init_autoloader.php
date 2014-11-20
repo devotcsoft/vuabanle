@@ -1,4 +1,5 @@
 <?php
+$A = 1;
 /**
  * Zend Framework (http://framework.zend.com/)
  *
