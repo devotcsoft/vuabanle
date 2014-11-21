@@ -123,6 +123,7 @@ class Utility_model extends CI_Model
 	public function getAllASC($table, $field, $value, $orderkey)
 	{
 		$sql = "SELECT * FROM $table  WHERE $field = $value ORDER BY $orderkey ASC  ";
+		//echo $sql;
 		$result = $this->db->query($sql);
 		if($result){
 			return $result->result_array();

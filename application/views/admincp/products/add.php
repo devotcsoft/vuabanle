@@ -210,7 +210,6 @@ $(document).ready(function(){
 									name="xuatxu" id="xuatxu" />
 							</div>
 							<div class="span2 price1l">Thương hiệu</div>
-							
 							<div class="span3">
                                 <select name="thuonghieuID" id="thuonghieuID" class="">
                                 	<?php foreach ($getAllbrand as $getAllbrands): ?>
@@ -221,13 +220,6 @@ $(document).ready(function(){
 							<div class="clear"></div>
 						</div>
 						<div class="row-form">
-							<!-- 
-							<div class="span2">Thông số</div>
-							<div class="span4">
-								<textarea class="" name="thongso"
-									placeholder="Phần thông số..."></textarea>
-							</div>
-							 -->
 							<div class="span2">SP bao gồm</div>
 							<div class="span4">
 								<textarea class="" name="spbaogom"

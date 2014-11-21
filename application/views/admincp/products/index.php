@@ -1,3 +1,14 @@
+<script type="text/javascript">
+function checked(ischeck, pid)
+{
+	var strUrl = <?= base_url(); ?>
+	$.ajax({
+		url: strUrl;
+	});
+	console.log(ischeck);
+	console.log(pid);
+}
+</script>
 <style type="text/css">
 <!--
 .aview {
@@ -19,10 +30,6 @@
 				<li>
 					<a href="javascript: void(0)" onclick="delAllCate(); return false;"><span class="icon-remove"></span><span class="text">Xóa</span></a>
 				</li>
-			
-
-		
-				
 			</ul>
         </div>
         <div class="workplace">
@@ -166,9 +173,9 @@
 										<?php } ?>
 										</td>
 										<td><?php  if($val['adstatus'] == 1){ ?>
-											<img src="<?= base_url('assets/back-end/img/daduyet.png'); ?>" style="width: 80px;height: 25px;">
+											<a href="javascript:void(0)" onclick="checked(0, <?= $val['productID'] ?>)"><img src="<?= base_url('assets/back-end/img/daduyet.png'); ?>" style="width: 80px;height: 25px;"></a>
 										<?php }else { ?>
-											<img src="<?= base_url().'assets/back-end/img/chuaduyet.png'; ?> " style="width: 80px;height: 25px;">
+											<a href="javascript:void(0)" onclick="checked(1, <?= $val['productID'] ?>)"><img src="<?= base_url().'assets/back-end/img/chuaduyet.png'; ?> " style="width: 80px;height: 25px;"></a>
 										<?php } ?>
 										</td>
 										
