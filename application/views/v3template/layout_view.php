@@ -46,6 +46,7 @@
     <script type="text/javascript" src="<?php echo base_url('assets/font-end');?>/js/brand-filter.js"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/font-end');?>/js/filter-price.js"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/font-end');?>/js/jquery.popup.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/font-end');?>/js/popup-mail.js"></script>
     
     <script type="text/javascript" src="<?php echo base_url('assets/font-end');?>/popup/jquery.cookie.popup.js"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/font-end');?>/popup/maincookie.popup.js"></script>
@@ -665,6 +666,42 @@ source: availableTags
             Điện thoại: (04) 6329 7119 | Fax: (04) 6329 7119 | Email: info@vuabanle.vn
         </span>
     </div><!--End Copy Right-->
+
+    <!--Popup Register Email-->
+    <script>
+        $(function(){
+            $('.slide-out-div').tabSlideOut({
+                tabHandle: '.handle',                              //class of the element that will be your tab
+                pathToTabImage: 'assets/font-end/css/images/icon-email-register.png',          //path to the image for the tab (optionaly can be set using css)
+                imageHeight: '143px',                               //height of tab image
+                imageWidth: '41px',                               //width of tab image
+                tabLocation: 'left',                               //side of screen where tab lives, top, right, bottom, or left
+                speed: 300,                                        //speed of animation
+                action: 'click',                                   //options: 'click' or 'hover', action to trigger animation
+                bottomPos: '200px',                                   //position from the top
+                fixedPosition: false                               //options: true makes it stick(fixed position) on scroll
+            });
+        });
+    </script>
+
+    <div class="slide-out-div">
+        <a class="handle" href="#">Content</a>
+        <div id="register-mail-form">
+            <div class="title"></div>
+            <form>
+                <div class="input">
+                    <input id="name-popup" type="text" placeholder="Họ tên">
+                    <input id="email-popup" type="text" placeholder="@Email">
+
+                    <div class="align-center">
+                        <input class="btn-inverse" type="button" value="Nam">
+                        <input class="btn-inverse" type="button" value="Nữ">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
 </footer>
 
 </body>
