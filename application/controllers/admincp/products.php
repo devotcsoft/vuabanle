@@ -61,7 +61,7 @@ class Products extends Ad_layout
 				'pagination' => $data["paging"],
 				'getAllCate' => $getAllCate,
 				'getMenulv2' => $getMenulv2,
-				'getAllBrand' => $getAllBrand,
+				'getAllBrand' => $getAllbrand,
 				'totalProduct' =>$result['total_record']
 		), true);
 		$this->load->view('admincp/ad_layout_view', $this->_data);
@@ -333,6 +333,26 @@ class Products extends Ad_layout
 					alert('Xóa không thành công !');
 					 location.assign('".base_url('admincp/products.html')."');
 				  </script>";
+		}
+	}
+	
+	
+	public function ischeck()
+	{
+		echo "11212";
+		$result = $this->products_model->ischeckproduct($_POST['ischeck'], $_POST['pid']);
+		var_dump($result);
+		die();
+		if($_POST['ischeck']) {
+			
+			var_dump($result);
+			die();
+			/*
+			if ($result)
+			{
+				var_dump(json_encode(array('status'=>'OK', 'result'=>$result)));
+			}
+			*/	
 		}
 	}
 	

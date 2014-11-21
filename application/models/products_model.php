@@ -939,6 +939,19 @@ class Products_model extends CI_Model
     	);
     }   
     
+    public  function ischeckproduct($value, $id)
+    {
+    	$sql = "UPDATE tbl_product SET adstatus = $value WHERE productID = $id ";
+    	$query = $this->db->query($sql);
+    	if($this->db->affected_rows()){
+    		return  true;
+    		$query->free_result();
+    	}else {
+    		return FALSE;
+    	}
+    }
+    
+    
     public function getRandProductlq($id)
     {
     	$sql = "
@@ -983,6 +996,9 @@ class Products_model extends CI_Model
 			}
 		}
 	}
+	
+	
+	
 	
 	
 	

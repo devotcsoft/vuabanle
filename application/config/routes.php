@@ -78,6 +78,9 @@ $route['admincp/products/add'] = "admincp/products/add/index/$1";
 $route['admincp/products/edit/(:num)'] = "admincp/products/edit/pid/$1";
 $route['admincp/products/delete'] = "admincp/products/delete/$1";
 
+	// 	check ajax index 
+	$route['admincp/products/ischeck'] = "admincp/products/ischeck/$1";
+
 
 // Thuong hieu
 $route['admincp/brand'] = "admincp/brand/index/$1";

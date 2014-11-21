@@ -1,12 +1,27 @@
 <script type="text/javascript">
 function checked(ischeck, pid)
 {
-	var strUrl = <?= base_url(); ?>
-	$.ajax({
-		url: strUrl;
-	});
-	console.log(ischeck);
-	console.log(pid);
+ 	if(confirm("Bạn có muốn sửa đổi trạng thái duyệt bài không !") == true) {
+ 		var strUrl = "<?= base_url('admincp/products/ischeck'); ?>";
+ 		$.ajax({
+ 			url: strUrl,
+ 			type: 'POST',
+ 			cache: false,
+ 			data :  {
+ 				ischeck : ischeck,
+ 				pid : pid,
+ 			},
+ 			success : function (response)
+ 			{
+ 				window.location.reload(true);
+ 			},
+ 			error: function (xhr, desc, err){
+ 				 console.log(xhr);
+ 			     console.log("Details: " + desc + "\nError:" + err);	
+ 			}
+ 		});
+    } else {
+    }
 }
 </script>
 <style type="text/css">
