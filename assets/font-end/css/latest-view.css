@@ -132,17 +132,18 @@
 }
 
 .latest-view .product-mask {
-    top: 17px;
-    left: 17px;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+    top: 0px;
+    left: 0px;
+    width: 42px;
+    height: 42px;
+    line-height: 37px;
     padding-left: 1px;
-    background-color: #f34b26;
+    background: url("images/icon-sale-price-4.png") center no-repeat;
+    background-size: 42px 42px;
 }
 
 .latest-view .product-mask span {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .latest-view .product-item{

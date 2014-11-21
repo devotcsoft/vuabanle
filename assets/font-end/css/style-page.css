@@ -905,6 +905,10 @@ input#search-brand-button{
     width: 201px;
     height: 201px;
     text-align: center;
+    overflow: hidden;
+    border: 1px #ededed solid;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .img-product-item img{
@@ -961,14 +965,15 @@ input#search-brand-button{
 
 .product-mask{
     position: absolute;
-    top: 165px;
-    right: 10px;
-    background-color: #0054a6;
+    top: 175px;
+    right: 5px;
+    background: url("images/icon-sale-price-1.png") center no-repeat;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 53px;
+    background-size: 50px 53px;
     line-height: 45px;
-    padding-left: 7px;
+    text-align: center;
 }
 
 .product-mask span{
@@ -976,6 +981,7 @@ input#search-brand-button{
     color: #fff;
     font-weight: bold;
     font-size: 14px;
+    text-shadow: 1px 1px 1px #222222;
 }
 
 .button-buy{
@@ -1410,6 +1416,10 @@ input#search-brand-button{
 
 #suggestions .product-item{
     border: 1px #e5e5e5 solid;
+}
+
+#suggestions .product-item .img-product-item{
+    border: none;
 }
 
 #suggestions .product-item .product-name{
