@@ -1606,3 +1606,67 @@ input#search-brand-button{
     padding-left: 10px;
     height: 30px;
 }
+
+/*POPUP REGISTER EMAIL*/
+.slide-out-div{
+    padding: 20px;
+    width: 250px;
+    background: #fff;
+    border: #f34b26 3px solid;
+    position: relative;
+    z-index: 999999999;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#register-mail-form{
+    margin-top: 50px;
+}
+
+#register-mail-form input{
+    width: 100%;
+    height: 30px;
+    border: 1px #e5e5e5 solid;
+    margin-bottom: 10px;
+    font-size: 13px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.handle{
+    top: 10px !important;
+}
+
+#register-mail-form .title{
+    position: absolute;
+    top: -88px;
+    left: 0px;
+    background: url("images/popup-50000.png") center no-repeat;
+    width: 226px;
+    height: 134px;
+}
+
+#register-mail-form .btn-inverse {
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #363636;
+    background-image: -moz-linear-gradient(top, #444, #222);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444), to(#222));
+    background-image: -webkit-linear-gradient(top, #444, #222);
+    background-image: -o-linear-gradient(top, #444, #222);
+    background-image: linear-gradient(to bottom, #444, #222);
+    background-repeat: repeat-x;
+    border-color: #222 #222 #000;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    width: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 9px;
+}
+
+.align-center{
+    text-align: center;
+    margin-top: 10px;
+}
