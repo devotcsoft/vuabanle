@@ -1,6 +1,5 @@
 <?php
 error_reporting(E_ALL);
-echo "lam";
 
 /*
  *---------------------------------------------------------------
@@ -206,4 +205,3 @@ require_once BASEPATH.'core/CodeIgniter.php';
 
 /* End of file index.php */
 /* Location: ./index.php */
-echo "1";
