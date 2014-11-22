@@ -28,7 +28,7 @@
                            data-big-image="<?= $productdetail->productImage ;?>">
                             <img src="<?= $productdetail->productImage ;?>" width="50" alt="<?= $productdetail->productName ?>">
                         </a>
-                        <?php if($productdetail->galleryImage !=  "N;"){ ?>
+                        <?php if(@$productdetail->galleryImage !=  "N;" && $productdetail->galleryImage != ''){ ?>
 						<?php foreach(unserialize($productdetail->galleryImage) as $img): ?>
 						<a href="#" class="simpleLens-thumbnail-wrapper"
 								data-lens-image="<?php echo str_replace('http://vuabanle.vn/', '', $img['image_url']) ; ?>"
