@@ -15,7 +15,7 @@ $(document).ready(function(){
 	</div>
 	<div class="workplace">
 		<div class="row-fluid">
-			<div class="span6">
+			<div class="span4">
 				<div class="head">
 					<div class="isw-documents"></div>
 					<h1>Hóa đơn mua hàng</h1>
@@ -26,8 +26,8 @@ $(document).ready(function(){
 					<div class="block-fluid">
 						<?php if(isset($error) && $error != ""){ ?>
 						<div class="row-form">
-							<div class="span3"></div>
-							<div class="span9">
+							<div class="span4"></div>
+							<div class="span8">
 								<?= @$error; ?>
 							</div>
 							<div class="clear"></div>
@@ -35,38 +35,38 @@ $(document).ready(function(){
 						<?php } ?>
 						
 						<div class="row-form">
-							<div class="span3">Người đặt mua</div>
-							<div class="span9">
+							<div class="span4">Người đặt mua</div>
+							<div class="span8">
 								<?= $cateDetail->cartName ?>
 							</div>
 							<div class="clear"></div>
 						</div>
 					
 						<div class="row-form">
-							<div class="span3">Điện thoại liên lạc</div>
-							<div class="span9">
+							<div class="span4">Điện thoại liên lạc</div>
+							<div class="span8">
 									<?= $cateDetail->cartPhoneNumber ?>
 							</div>
 							<div class="clear"></div>
 						</div>
 						
 							<div class="row-form">
-							<div class="span3">Email </div>
-							<div class="span9">
+							<div class="span4">Email </div>
+							<div class="span8">
 									<?= $cateDetail->cartEmail ?>
 							</div>
 							<div class="clear"></div>
 						</div>
 							<div class="row-form">
-							<div class="span3">Địa chỉ nhận hàng</div>
-							<div class="span9">
+							<div class="span4">Địa chỉ nhận hàng</div>
+							<div class="span8">
 									<?= $cateDetail->cartAddress ?>
 							</div>
 							<div class="clear"></div>
 						</div>
 							<div class="row-form">
-							<div class="span3">Điện thoại liên lạc</div>
-							<div class="span9">
+							<div class="span4">Điện thoại liên lạc</div>
+							<div class="span8">
 									<?= $cateDetail->cartPhoneNumber ?>
 							</div>
 							<div class="clear"></div>
@@ -117,10 +117,10 @@ $(document).ready(function(){
 			</div>
 			
 			
-			<div class="span6">
+			<div class="span8">
 				<div class="head">
 					<div class="isw-documents"></div>
-					<h1>Thôn tin sản phẩm</h1>
+					<h1>Thông tin sản phẩm</h1>
 					<div class="clear"></div>
 				</div>
 				<div class="block-fluid table-sorting">
@@ -128,9 +128,11 @@ $(document).ready(function(){
                             <thead>
                                 <tr>
                                     <th width="5%">STT</th>
-                                    <th width="20%">Tên sản phẩm</th>
-                                    <th width="20%">Giá</th>
-                                    <th width="15%">Số lượng</th>
+                                    <th width="30%">Tên sản phẩm</th>
+                                    <th width="10%">Giá bán </th>
+                                    <th width="15%">Giá gốc</th>
+                                    <th width="15%">Giảm %</th>
+                                    <th width="5%">Số lượng</th>
                                     <th width="20%">Tổng tiền</th>                                    
                                 </tr>
                             </thead>
@@ -140,9 +142,13 @@ $(document).ready(function(){
 									<tr class="<?= $idx % 2 == 0? 'odd': 'event'  ?>>">
 										<td><?=  $i ?></td>
 										<td><a href="<?= base_url($val['seo_name']).'.html'  ?>" target="_bank"><?= $val['productName'] ?></a></td>
+										<td> <?php echo $val['giagiam']; ?></td>
 										<td><?= $val['gia'] ?></td>
+										<td> <?php echo $val['giamgia']; ?> %</td>
 										<td><?= $val['detailNumber'] ?></td>
+										
 										<td><?= Utility_model::price_format($val['gia']*$val['detailNumber']) ?> VNĐ</td>
+										
 										<?php
 										$total = $total + $val['gia']*$val['detailNumber'] + $val['cod'];
 										$i++;

@@ -41,7 +41,7 @@ class Products extends Ad_layout
 		$getAllCate = $this->category_model->getAllCate();
 		$getMenulv2 = $this->category_model->getMenulv2All($this->GLOBALS);
 		
-		$getAllBrand = $this->utility_model->getAllASC('tbl_brand', 'status', '1', 'catName');
+		$getAllbrand = $this->brand_model->getAllBrand();
 		
 		$this->load->library('pagination');
 		$config['base_url'] = base_url().'/admincp/products';
@@ -61,7 +61,7 @@ class Products extends Ad_layout
 				'pagination' => $data["paging"],
 				'getAllCate' => $getAllCate,
 				'getMenulv2' => $getMenulv2,
-				'getAllBrand' => $getAllBrand,
+				'getAllBrand' => $getAllbrand,
 				'totalProduct' =>$result['total_record']
 		), true);
 		$this->load->view('admincp/ad_layout_view', $this->_data);
@@ -82,7 +82,7 @@ class Products extends Ad_layout
 		}
 		
 		$getMenulv2 = $this->category_model->getMenulv2();
-		$getAllbrand = $this->utility_model->getAllASC('tbl_brand', 'status', 1, 'catName');
+		$getAllbrand = $this->brand_model->getAllBrand();
 		
 		$get_padding = $this->base_model->get_padding();
 		
@@ -178,102 +178,7 @@ class Products extends Ad_layout
 		}
 	}
 	
-	/*
-	public function save()
-	{
-		$img = $this->input->post('image_url');
-		
-		if($this->input->post('image_url') != ''){
-			$image = array();
-			$i=0;
-			foreach ($img as $key => $value) {
-				$image[$i]['image_url'] = str_replace(base_url(), '', $img[$key]);
-				$i=$i+1;
-			}
-            $galleryImage = serialize($image);
-		}
-		$gia =  $this->input->post('gia');
-		$giaphantram =  $this->input->post('giamgia');
-		$giasale =  $this->input->post('giagiam');
-		
-		
-		
-		// TH1  GIA GIAM DIEN VA $GIA % CUNG DIEN
-		if($giaphantram != null && $giaphantram != 0) {
-			echo "1";
-			if($giasale != null && $giasale != 0) { 	
-				$giagiam = $giaphantram;
-			}	
-		}else {
-			if($giasale != null && $giasale != 0) {
-				//$giagiam = round(((($this->input->post('gia') - $this->input->post('giagiam')) / $this->input->post('gia')) * 100 ), 1);
-				$giagiam = round(($gia-$giasale) / $gia * 100, 1);
-				
-				//echo $giagiam;
-			}
-		}
-		
-		$data = array(
-			'productName' => $this->input->post('productName'),
-			'productCode' => $this->input->post('productCode'),
-			'catID' => $this->input->post('catID'),
-			'thuonghieuID' => $this->input->post('thuonghieuID'),
-			'dotuoi' => $this->input->post('dotuoi'),
-			'gia' => $gia,
-			'giamgia' => @$giagiam,
-			'giagiam' => $giasale,
-				'thongso' => $this->input->post('thongso'),
-				'spbaogom' => $this->input->post('spbaogom'),
-			'anhthume' => $this->input->post('anhthume'),
-			'productDetail' => $this->input->post('productDetail'),
-			'video' => $this->input->post('video'),
-			'banchay' => $this->input->post('banchay'),
-			'productnew' => $this->input->post('productnew'),
-			'producthot' => $this->input->post('producthot'),
-			'noibat' => $this->input->post('noibat'),
-			'promoi' => $this->input->post('promoi'),
-			'id_padding1' => $this->input->post('id_padding1'),
-			'id_padding2' => $this->input->post('id_padding2'),
-			'status' => $this->input->post('status'),
-			'seo_name' => $this->input->post('seo_name'),
-			'metaTitle' => $this->input->post('metaTitle'),
-			'metaDes' => $this->input->post('metaDes'),
-			'metaKey' => $this->input->post('metaKey'),
-			'metaAuthor' => $this->input->post('metaAuthor'),
-			'galleryImage' => @$galleryImage,
-			'modname' => 'product',
-			'chatlieu' => $this->input->post('chatlieu'),
-			'xuatxu' => $this->input->post('xuatxu'),
-			'kichthuoc' => $this->input->post('kichthuoc'),
-			'baohanh' => $this->input->post('baohanh'),
-			'tinhtranghang' => $this->input->post('tinhtranghang'),
-			'anhkhuyenmai' => $this->input->post('anhkhuyenmai'),
-			'posup' => $this->input->post('posup'),
-			'hinhthucgiaonhan' => $this->input->post('hinhthucgiaonhan'),
-			'productImage' => $this->input->post('productImage'),
-			'created' => date('Y-m-d H:i:s'),
-			//
-			'adstatus' => 0,
-			'username' => $this->sessionAll->userName,
-		);
-		
-		$insert = $this->utility_model->insert($this->table, $data);
-		$id = $this->db->insert_id();
-		if($insert){
-			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-						<script>
-						alert('Bạn đã thêm mới thành công !');
-						 location.assign('".base_url('admincp/products/edit/'.$id)."');
-					  </script>";
-		}else {
-			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-						<script>
-						alert('Thêm mới thất bại !');
-						 location.assign('".base_url('admincp/products/add.html')."');
-					  </script>";
-		}		
-	}
-	*/
+	
 	
 	public function edit()
 	{
@@ -300,23 +205,10 @@ class Products extends Ad_layout
 				}
 			}
 		}
-	
-		
-// 		if($this->input->post() != ""){
-// 			$keypage = $this->utility_model->find_slugwhere($this->table, 'seo_name', $this->input->post('seo_name'));
-// 			//var_dump($keypage);
-// 			if($keypage == true){
-// 				$this->updated();
-// 				$error = '';
-// 			}else {
-// 				$error = "<div class='aleterror'><p>URL đã được sử dụng vui lòng chọn URL khác</p></div>";
-// 			}
-// 		}
-
 		$unset = unserialize($productDetail->galleryImage);
 		//var_dump($unset);
 		$getMenulv2 = $this->category_model->getMenulv2();
-		$getAllbrand = $this->utility_model->getAllASC('tbl_brand', 'status', 1, 'catName');
+		$getAllbrand = $this->brand_model->getAllBrand();
 		
 		$this->_data['ad_main_content'] = $this->load->view('admincp/products/edit', array(
 			'getMenulv2' => $getMenulv2,
@@ -342,19 +234,7 @@ class Products extends Ad_layout
 		}
 		@$galleryImage = serialize($image);
         
-		/*
-        $colors = $this->input->post('prod_color');
-        if($this->input->post('prod_color') != ''){
-            $colorarr = array();
-            $i=0;
-            foreach ($colors as $key => $value) {
-                $colorarr[$i]['prod_color'] = $colors[$key];
-                $i=$i+1;
-            }
-        }
-        @$colorarray = serialize($colorarr);
-        */
-
+	
 		$gia =  $this->input->post('gia');
 		$giaphantram =  $this->input->post('giamgia');
 		$giasale =  $this->input->post('giagiam');
@@ -454,6 +334,16 @@ class Products extends Ad_layout
 					 location.assign('".base_url('admincp/products.html')."');
 				  </script>";
 		}
+	}
+	
+	
+	/**
+	 * kiem duyet bai dang 
+	 */
+	public function ischeck()
+	{
+		$result = $this->products_model->ischeckproduct($_POST['ischeck'], $_POST['pid']);
+		echo json_encode(array('ischeck' => $_POST['ischeck'] ,'pid' => $_POST['pid']));
 	}
 	
 }

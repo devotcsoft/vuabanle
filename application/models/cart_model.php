@@ -50,7 +50,7 @@ class Cart_model extends CI_Model
 	
 	function getProductDeail($cartID)
 	{
-		$this->db->select('SQL_CALC_FOUND_ROWS   j . *, pro.productName, pro.seo_name, pro.gia, c.`status` as trangthai ' , false);
+		$this->db->select('SQL_CALC_FOUND_ROWS   j . *, pro.productName, pro.seo_name, pro.gia, pro.giagiam, pro.giamgia, c.`status` as trangthai ' , false);
 		$this->db->from('tbl_cartdetails j');
 		$this->db->join('tbl_product pro', 'j.productID = pro.productID ', 'left');
 		$this->db->join('tbl_carts c', 'j.cartID = c.cartID ', 'left');
