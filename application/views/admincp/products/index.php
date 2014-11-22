@@ -13,7 +13,29 @@ function checked(ischeck, pid)
  			},
  			success : function (response)
  			{
- 				window.location.reload(true);
+ 	 			console.log(ischeck);
+ 				if(ischeck == 0) {
+	                	//$("#img" + pid).hide();
+ 	 				//$("#img" + pid).attr("src","<?= base_url().'assets/back-end/img/chuaduyet.png'; ?>");
+ 	 				var html = "<div id=img"+pid+"><a href='javascript:void(0)' onclick='checked(1,"+pid+")'><img src='<?= base_url("assets/back-end/img/chuaduyet.png"); ?> ' style='width: 80px;height: 25px;'></a></div>"; 
+ 	 				$("#img" + pid).html(html);
+	                	console.log("chua duyet");
+ 	 	 		}else {
+ 	 	 			//$("#img" + pid).hide();
+ 	 	 			var html = "<div id=img"+pid+"><a href='javascript:void(0)' onclick='checked(0, "+pid+")'><img src='<?= base_url("assets/back-end/img/daduyet.png"); ?> ' style='width: 80px;height: 25px;'></a></div>";
+ 	 	 			$("#img" + pid).html(html);
+ 	 	 			
+ 	 	 			console.log("da duyet");
+ 	 	 	 	}
+ 	 	 	 	
+ 				//setTimeout(function () {
+ 	                //$('#loading').html('<img src="' + d.avatar_url + '"><br>' + d.login);
+ 	                //console.log(response.ischeck);
+ 	            //}, 2000);
+ 	 			
+ 	 				
+ 	 			console.log(response);
+ 				//window.location.reload(true);
  			},
  			error: function (xhr, desc, err){
  				 console.log(xhr);
@@ -86,9 +108,6 @@ function checked(ischeck, pid)
 								</select>
 								</div>
 								<div class="input_row">
-									<?php
-									//var_dump($getAllBrand); 
-									?>
 								<select style="width: 100%" name="brand">
 									<option value="">Chọn thương hiệu</option>
 									<?php
@@ -103,12 +122,6 @@ function checked(ischeck, pid)
 								<select style="width: 100%" name="loaisp">
 									<option value="">Sản phẩm thuộc loại(Tất cả)</option>
 									<option value="1">SP Khuyến mãi</option>
-									<!-- 
-									<option value="2">SP Hot</option>
-									<option value="3">SP Xem nhiều</option>
-									<option value="4">SP Mới</option>
-									<option value="5">SP Nổi bật</option>
-									 -->
 								</select>
 								</div>
 								 
@@ -187,12 +200,22 @@ function checked(ischeck, pid)
 											<img src="<?= base_url().'public/libs/icons/clock_48.png'; ?>" width='25px' height='12px'/>
 										<?php } ?>
 										</td>
-										<td><?php  if($val['adstatus'] == 1){ ?>
-											<a href="javascript:void(0)" onclick="checked(0, <?= $val['productID'] ?>)"><img src="<?= base_url('assets/back-end/img/daduyet.png'); ?>" style="width: 80px;height: 25px;"></a>
-										<?php }else { ?>
-											<a href="javascript:void(0)" onclick="checked(1, <?= $val['productID'] ?>)"><img src="<?= base_url().'assets/back-end/img/chuaduyet.png'; ?> " style="width: 80px;height: 25px;"></a>
-										<?php } ?>
-										</td>
+										<?php if ($this->sessionAll['accUser'] == 3) { ?>
+											<td><?php  if($val['adstatus'] == 1){ ?>
+												<div id="img<?= $val['productID'] ?>"><a href="javascript:void(0)" onclick="checked(0, <?= $val['productID'] ?>)"><img  src="<?= base_url('assets/back-end/img/daduyet.png'); ?>" style="width: 80px;height: 25px;"></a></div>
+											<?php }else { ?>
+												<div id="img<?= $val['productID'] ?>"><a href="javascript:void(0)" onclick="checked(1, <?= $val['productID'] ?>)"><img id="img<?= $val['productID'] ?>" src="<?= base_url().'assets/back-end/img/chuaduyet.png'; ?> " style="width: 80px;height: 25px;"></a></div>
+											<?php } ?>
+											</td>
+				                        <?php }else { ?>
+				                        	<td><?php  if($val['adstatus'] == 1){ ?>
+												<img src="<?= base_url('assets/back-end/img/daduyet.png'); ?>" style="width: 80px;height: 25px;">
+											<?php }else { ?>
+												<img src="<?= base_url().'assets/back-end/img/chuaduyet.png'; ?> " style="width: 80px;height: 25px;">
+											<?php } ?>
+											</td>
+				                        <?php }?>
+										
 										
 										<!-- <td><a href="<?php echo base_url('admincp/category/edit');?>/<?= $val['catID'] ?>"><?= $val['catName'] ?></a></td> -->
 										

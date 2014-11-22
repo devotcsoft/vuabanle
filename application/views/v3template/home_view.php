@@ -1,14 +1,13 @@
-<!-- 
+
 <div class="cookie-popup-wrap" style="display: none">
 		<div class="cookie-popup">
             <a href="<?php echo base_url('khuyen-mai-lon');?>">
-                <img src="<?php echo base_url('assets/img/khuyen-mai-20-11.png');?>" alt="Khuyến mại" title="Khuyến mại">
+                <img src="<?php echo base_url('assets/img/cuoi-tuan-gia-soc-Recovered.png');?>" alt="Khuyến mại" title="Khuyến mại">
             </a>
 			<h6 id="closepopup"><a href="#"></a></h6>
 		</div>
         <div class="mask"></div>
 </div>
--->
 <!--End .cookie-popup-wrap-->
 
 <!-- main_content -->

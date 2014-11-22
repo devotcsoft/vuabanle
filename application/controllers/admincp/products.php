@@ -337,23 +337,13 @@ class Products extends Ad_layout
 	}
 	
 	
+	/**
+	 * kiem duyet bai dang 
+	 */
 	public function ischeck()
 	{
-		echo "11212";
 		$result = $this->products_model->ischeckproduct($_POST['ischeck'], $_POST['pid']);
-		var_dump($result);
-		die();
-		if($_POST['ischeck']) {
-			
-			var_dump($result);
-			die();
-			/*
-			if ($result)
-			{
-				var_dump(json_encode(array('status'=>'OK', 'result'=>$result)));
-			}
-			*/	
-		}
+		echo json_encode(array('ischeck' => $_POST['ischeck'] ,'pid' => $_POST['pid']));
 	}
 	
 }
