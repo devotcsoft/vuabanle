@@ -10,7 +10,7 @@ $(document).ready(function(){
 	<div class="breadLine">
 		<ul class="breadcrumb">
 			<li><a href="">Quản trị</a> <span class="divider">&gt;</span></li>
-			<li class="active">Hóa đơn mua hàng/li>
+			<li class="active">Hóa đơn mua hàng</li>
 		</ul>
 	</div>
 	<div class="workplace">
@@ -132,26 +132,41 @@ $(document).ready(function(){
                                     <th width="10%">Giá bán </th>
                                     <th width="15%">Giá gốc</th>
                                     <th width="15%">Giảm %</th>
-                                    <th width="5%">Số lượng</th>
+                                    <th width="5%">SL</th>
                                     <th width="20%">Tổng tiền</th>                                    
                                 </tr>
                             </thead>
                             <tbody>
                             	<?php $total = 0; $i = 1 ;?>	
                                 <?php foreach($productAll as $idx => $val){?>
-									<tr class="<?= $idx % 2 == 0? 'odd': 'event'  ?>>">
+									<tr class="<?= $idx % 2 == 0? 'odd': 'event'  ?>>"Hóa đơn mua hàng>
 										<td><?=  $i ?></td>
 										<td><a href="<?= base_url($val['seo_name']).'.html'  ?>" target="_bank"><?= $val['productName'] ?></a></td>
-										<td> <?php echo $val['giagiam']; ?></td>
-										<td><?= $val['gia'] ?></td>
-										<td> <?php echo $val['giamgia']; ?> %</td>
+										<td>
+										<?php if($val['giagiam'] == '0' ){
+											echo Utility_model::price_format($val['gia']);
+											$firtstotal  = $val['gia'];
+										}else {
+											echo Utility_model::price_format($val['giagiam']);
+											$firtstotal  = $val['giagiam'];
+										}; ?>
+										</td>
+										<td><?= Utility_model::price_format($val['gia']) ?></td>
+										<td><?php
+											if($val['giagiam'] == '0' ){
+												echo "0";
+											}else{
+												echo $val['giamgia'];
+											} 
+										?>%</td>
 										<td><?= $val['detailNumber'] ?></td>
 										
-										<td><?= Utility_model::price_format($val['gia']*$val['detailNumber']) ?> VNĐ</td>
-										
+										<td>
+											<?= Utility_model::price_format($firtstotal * $val['detailNumber']) ?> VNĐ
+										</td>
 										<?php
-										$total = $total + $val['gia']*$val['detailNumber'] + $val['cod'];
-										$i++;
+											$total = $total + $firtstotal * $val['detailNumber'] + $val['cod'];
+											$i++;
 										?>
 									</tr>
 								<?php } ?>
@@ -165,7 +180,7 @@ $(document).ready(function(){
                                 </div>
 							<div class="span3">Tổng số tiền là : </div>
 								<div class="span3">
-									<?php echo Utility_model::price_format($total); ?>						
+									<?php echo Utility_model::price_format($total); ?> Vnđ						
 								</div>
 							<div class="clear"></div>
 						</div>
