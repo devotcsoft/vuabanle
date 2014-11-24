@@ -38,6 +38,8 @@
 |
 */
 
+
+
 // ============================ ADMIN ======================================== //
 $route['admincp'] = "admincp/admincp/index/$1";
 
@@ -214,6 +216,8 @@ $route['tin-tuc/(:any)'] = "articles/tintucview/$1";
 // ============================ HOME ======================================== //
 
 
+
+
 // login register member by Duong
 $route['dang-nhap/kiem-tra'] = "login/check_login/index/$1";
 $route['dang-nhap'] = "login/index/$1";
@@ -283,9 +287,14 @@ $route['cart/step1'] = "cart/step1/$1";
 $route['(:any)'] = "home/uri";
 $route['users'] = "users/index/$1";
 
+// check-email-database
+$route['home/checkEmail'] = "home/checkEmail/$1";
+
 // gửi nhận xet
 $route['gui-nhan-xet'] = "home/comment/index/$1";
 $route['khuyen-mai-lon'] = "home/bigsale/index/$1";
+
+
 
 
 

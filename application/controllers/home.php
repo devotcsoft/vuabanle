@@ -615,6 +615,18 @@ class Home extends Layout {
 		), true);
 		$this->load->view('v3template/layout_view', $this->_data);
     }
+    
+    
+    
+    public function checkEmail()
+    {    	
+    	$checkmail = $this->home_model->checkisemail($this->input->post('username_rg'));
+    	if($checkmail == true){
+    		echo "true";
+    	}else {
+    		echo "false";
+    	}    		
+    }
 
 	
 }

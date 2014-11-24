@@ -217,6 +217,16 @@ class Home_model extends CI_Model
 		}
 	}
 	
+	public function checkisemail($email)
+	{
+		$query = $this->db->get_where('tbl_member', array('email' => "$email"));
+		if($query->num_rows() > 0) {
+			return FALSE;
+		}else {
+			return TRUE;
+		}
+	}
+	
 
 	
 }

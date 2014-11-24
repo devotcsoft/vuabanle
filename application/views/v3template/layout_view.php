@@ -51,6 +51,10 @@
     <script type="text/javascript" src="<?php echo base_url('assets/font-end');?>/popup/jquery.cookie.popup.js"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/font-end');?>/popup/maincookie.popup.js"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/font-end');?>/js/popbox.js"></script>
+    
+    <script type='text/javascript' src='<?php echo base_url('assets/libs/jQuery_Validation/jquery.validate.js'); ?>'></script>
+	<script type='text/javascript' src='<?php echo base_url('assets/libs/jQuery_Validation/localization/messages_vi.js'); ?>'></script>
+    
 
     <!-- // HOME -->
     <?php if($this->uri->segment(1) && $this->uri->segment(1) != null){ ?>
@@ -683,19 +687,52 @@ source: availableTags
             });
         });
     </script>
-
+    
+<script type="text/javascript">
+    $(document).ready(function(){
+    	$("#mail_form").validate({
+			rules: {
+				username_rg: {
+					required: true,
+					minlength: 2,
+				},
+				email_rg: {
+					required: true,
+					email: true,
+					remote: {
+						url: "<?php echo base_url('home/checkEmail'); ?>",
+					 	type: "post",
+					},
+				},
+			},
+			messages: {
+				username_rg: {
+					required: "Không được để trống",
+					minlength: "Họ và tên phải nhiều hơn 4 kí tự"
+				},
+				email_rg: {
+					required: "Không được để trống",
+					email : "Email phải nhập đúng định dạng",
+					remote: "Email đã tồn tại",
+				},
+				
+			}
+		});
+        
+    });
+</script>
     <div class="slide-out-div">
         <a class="handle" href="#">Content</a>
         <div id="register-mail-form">
             <div class="title"></div>
-            <form>
+            <form id="mail_form" method="post">
                 <div class="input">
-                    <input id="name-popup" type="text" placeholder="Họ tên">
-                    <input id="email-popup" type="text" placeholder="@Email">
+                    <input  name="username_rg" type="text" placeholder="Họ tên" required>
+                    <input  name="email_rg" type="text" placeholder="@Email" required>
 
                     <div class="align-center">
-                        <input class="btn-inverse" type="button" value="Nam">
-                        <input class="btn-inverse" type="button" value="Nữ">
+                        <input class="submit" type="submit" value="Nam">
+                        <input class="submit" type="submit" value="Nữ">
                     </div>
                 </div>
             </form>
