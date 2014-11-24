@@ -27,6 +27,7 @@ function checked(ischeck, pid)
  	 	 			
  	 	 			console.log("da duyet");
  	 	 	 	}
+
  	 	 	 	
  				//setTimeout(function () {
  	                //$('#loading').html('<img src="' + d.avatar_url + '"><br>' + d.login);
